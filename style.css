@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(155, 137, 137);
+    color: #fff;
+    flex-direction: column;
+}
+
+header{
+    height: 50px;
+    width: 100%;
+    background: #000;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 98%;
+    /* background: yellow; */
+    min-height: calc(100vh - 50px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.newsBox{
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+    border-radius: 3px;
+    background: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    color: coral;
+}
+
+
+@media (max-width: 600px) {
+    .newsBox {
+        height: fit-content;
+    }
+}
+
+.newsBox img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.title{
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #000;
+}
+
+.author{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.description p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* 
+content: "Dear Readers,\nWhat do you write about on a Saturday morning when India is to take on Pakistan in Dubai on Sunday evening? Of course, about the Sunday evening.\nSubscribe to this weekly newsletter here\nBut first about those many tense Fridays of the 80... [3108 chars]"
+
+description: "The unreasonable emotional investment in face-offs between the arch rivals would trigger curfew on streets, see a spike in televisions sales and also result in sound thrashing for a generation of kids."
+image: "https://images.indianexpress.com/2021/10/Untitled-design-36-1.jpg"
+publishedAt: "2021-10-23T03:34:13Z"
+*/
